@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Intoduction to HTML</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Introduction to HTML</header>
+        <ul>
+          <li><a class="nav-link" href="#what_is_html">What is HTML</a></li>
+          <li><a class="nav-link" href="#html_editors">HTML Editors</a></li>
+          <li><a class="nav-link" href="#html_elements">HTML Elements</a></li>
+          <li><a class="nav-link" href="#html_attributes">HTML Attributes</a></li>
+          <li><a class="nav-link" href="#html_headings">HTML Headings</a></li>
+          <li><a class="nav-link" href="#html_paragraphs">HTML Paragraphs</a></li>
+          <li><a class="nav-link" href="#html_styles">HTML Styles</a></li>
+          <li><a class="nav-link" href="#html_formatting">HTML Formatting</a></li>
+          <li><a class="nav-link" href="#references">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="what_is_html">
+        <header><h2>What is HTML</h2></header>
+        <article>
+          <p>
+            HTML is the standard markup language for creating Web pages.<br>
+    <ul>
+      <li>HTML stands for Hyper Text Markup Language</li>
+      <li>HTML describes the structure of a Web page</li>
+      <li>HTML consists of a series of elements</li>
+      <li>HTML elements tell the browser how to display the content</li>
+      <li>HTML elements are represented by tags</li>
+      <li>HTML tags label pieces of content such as &quot;heading&quot;, &quot;paragraph&quot;, &quot;table&quot;, and so on</li>
+      <li>Browsers do not display the HTML tags, but use them to render the content of the page</li></ul>
+     <h2>Example of a HTML document</h2>
+       <p>The below is a simple HTML page design. Click on the link below the example to try it out, remember, change the data as per the below in black text and see your HTML document change with the input.</p>
+    <code style = "color: dodgerblue">
+    &lt;!DOCTYPE html>
+    &lt;html>
+    &lt;head>
+    &lt;title><strong style = "color: black;"> Page Title Goes Here </strong>&lt;/title>
+    &lt;/head>
+    &lt;body>
+    &lt;h1><strong style = "color: black;"> My First Heading </strong>&lt;/h1>
+    &lt;p><strong style = "color: black;"> My first paragraph. </strong>&lt;p>     &lt;/body>
+    &lt;/html>
+    </code> 
+     
+    <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+    <br>
+    <br>
+      <h2>Explanation of tags</h2><ul>
+        <li>The <strong>&lt;!DOCTYPE html></strong> declaration defines this document to be HTML5</li>
+        <li>The <strong>&lt;HTML></strong> element is the root element of an HTML page</li>
+        <li>The <strong>&lt;head></strong> element contains meta information about the document</li>
+        <li>The <strong>&lt;title></strong> element specifies a title for the document</li>
+        <li>The <strong>&lt;body></strong> element contains visible page content</li>
+        <li>The <strong>&lt;h1></strong> element defines a large heading</li>
+        <li>The <strong>&lt;p></strong> element defines a pragraph</li>
+      </ul> 
+      <br>
+    <h2>HTML Tags</h2><p>HTML tags are element names surrounded by angle brackets&colon;
+     <code style = "color: dodgerblue"> &lt;tagname><strong style = "color: black;">content goes here</strong>&lt;/tagname></code>
+     <ul>
+       <li>HTML tags normally come in <strong>pairs</strong> like &lt;p&gt;</li>
+       <li>The first tag in a pair is always the <strong>start tag</strong>, the second tag will then be the <strong>end tag</strong>.</li>
+       <li>The end tag is written like the start tage, but will have a <strong>&quot;/&quot;</strong> <u>forward slash</u> before the tag name</li>
+      </ul>
+    <br>
+    <h2>Web Browsers</h2>
+       <p>The purpose of a web browser &lpar;Chrome, Edge, Firefox, Safari&rpar; is to read HTML documents and display them.
+    <br>
+    The browser does not display the HTML tags, but uses them to determine how to display the document&colon;<br>
+    <br><img src="https://www.w3schools.com/html/img_chrome.png" alt="sample of how html is displayed">
+    <br>
+    <br>   
+       <h2>HTML Page Structure</h2>
+       <p>Below is an example of an HTML page structure&colon;</p>
+    
+    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;<strong>Page title</strong>&lt;/title&gt;
+    </div>
+    &lt;/head&gt;
+    </div>
+    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;<strong>This is a heading</strong>&lt;/h1&gt;</div>
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;<strong>This is a paragraph.</strong>&lt;/p&gt;</div>
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;<strong>This is another paragraph.</strong>&lt;/p&gt;</div>
+    </div>
+    &lt;/body&gt;
+    </div>
+    &lt;/html&gt;
+    </div>
+    <p><strong>Note</strong> that only the content inside the &lt;body&gt; &lpar;the white area&rpar; is displayed in a browser.</p><br><hr width="400px"><br>
+       
+    <section class = "main-section" id ="html_editors">
+    <header><h2>HTML Editors</h2></header>
+    <p>Web pages can be created and modified by using professional HTML editors. However, for learning HTML we recommend a simple text editor like Notepad &lpar;PC&rpar; or TextEdit &lpar;Mac&rpar;. We believe using a simple text editor is a good way to learn HTML. Follow the four steps below to create your first web page with Notepad or TextEdit.</p>
+    <h2>Step 1&colon; Open Notepad &lpar;PC&rpar;</h2>
+    <ul>
+    <li><strong>Windows 8 or later&colon;</strong><br>
+    Open the <strong>Start Screen</strong> &lpar;the window symbol at the bottom left of the screen&rpar;. Type <strong>Notepad.</strong></li>
+    <li><strong>Windows 7 or earlier&colon; </strong><br>Open <strong>Start &gt; Programs &gt; Accesories &gt; Notepad</strong></li>
+    </ul>
+    <h2>Step 1&colon; Open TextEdit &lpar;Mac&rpar;</h2>
+    <ul>
+    <li>Open<strong> Finder &gt; Applications &gt; TextEdit</strong></li>
+    <li>Change some preferences to get the application to save files correctly. In <strong>Preferences &gt; Format &gt;</strong> choose <strong>&quot;Plain Text&quot;.</strong></li>
+    <li>Then under &quot;Open and Save&quot;, check the box that says &quot;Display HTML files as HTML code instead of formatted text&quot;.</li>
+    <li>Then open a new document to place the code.</li>
+    </ul>
+    <h2>Step 2&colon; Write Some HTML</h2>
+    <p>Write or copy some HTML into Notepad.</p>
+    <img src= "https://www.w3schools.com/html/img_notepad.png" alt = "notepad screenshot" class="main-doc-imgs"/><br>
+    <h2>Step 3&colon; Save the HTML Page</h2>
+    <ul>
+    <li>Save the file on your computer. <strong>Select File &gt; Save as</strong> in the Notepad menu.</li>
+    <li>Name the file <strong>&quot;index.htm&quot;</strong> and set the encoding to <strong>UTF-8</strong> &lpar;which is the preferred encoding for HTML files&rpar;.</li>
+    </ul><br>
+    <img src= "https://www.w3schools.com/html/img_saveas.png" alt = "save as view" class="main-doc-imgs"/><br>
+     <br>
+    <strong>TIP :</strong>You can use either &period;htm or &period;html as file extension. There is no difference, it is up to you. 
+    <br><br>
+    <h2>Step 4&colon; View the HTML Page in Your Browser</h2>
+    <p> Open the saved HTML file in your preferred browser &lpar;double click on the file, or right&hyphen;click and choose &quot;Open with&quot;&rpar;.<br>
+    The page will look similar to the below&colon;<br>
+    <br><img src="https://www.w3schools.com/html/img_chrome.png" alt="sample of how html is displayed"><br><hr width="400px">
+    <br>
+    <section class = "main-section" id ="html_elements">
+    <header><h2>HTML Elements</h2></header>  
+      <h2>HTML Elements</h2>
+      <p>An HTML element usually consists of a <strong>start</strong> tag and an <strong>end</strong> tag, with the content inbetween&colon;</p>
+    <code style = "color: dodgerblue"> &lt;tagname&gt;<strong style = "color: black;">content goes here</strong>&lt;/tagname&gt;</code> 
+    <p>The HTML <strong>element</strong> is everything from the start tag to the end tag&colon;<p>  
+    <code style = "color: dodgerblue"> &lt;p&gt;<strong style = "color: black;">content goes here</strong>&lt;/p&gt;</code>
+    <p>HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the <strong>&lt;br&gt;</strong> element &lpar;whcih indicates a line break&rpar;.</p><br>
+     <h2>Nested HTML Elements</h2> 
+     <p>HTML elements can be nested &lpar;elements can contain elements&rpar;.<br>
+    <br>All HTML documents consist of nested HTML elements, we will now have a look at various examples&colon;</p>
+    <code style = "color: dodgerblue">
+    &lt;html>
+    &lt;head>
+    &lt;title><strong style = "color: black;"> Page Title Goes Here </strong>&lt;/title>
+    &lt;/head>
+    &lt;body>
+    &lt;h1><strong style = "color: black;"> My First Heading </strong>&lt;/h1>
+    &lt;p><strong style = "color: black;"> My first paragraph. </strong>&lt;p>     &lt;/body>
+    &lt;/html>
+    </code>
+      <p>The <strong>&lt;html&gt;</strong> element defines the whole document. It has both a start and end tag.
+    <br>
+    <br>Inside the &lt;html&gt; element is the <strong>&lt;body&gt;</strong>. The <strong>&lt;body&gt;</strong> element defines the document body, and once again can be seen to have a start and end tag.
+    <br>
+    <br>Inside the &lt;body&gt; element is two more HTML tags&colon; <strong>&lt;h1&gt;</strong> and <strong>&lt;p&gt;</strong>.<br>
+    <br>The <strong>&lt;h1&gt;</strong> element defines the heading, and once again can be seen to have a start and end tag. As seen with the example the element content is&colon; <strong>&quot;My First Heading&quot;</strong>
+    <br>
+    <br>The <strong>&lt;p&gt;</strong> element defines a paragraph, and once again can be seen to have a start and end tag. As seen with the example the element content is&colon; <strong>&quot;My First Paragraph&quot;</strong>
+    <br>
+    <br><strong>It is best practice to always add closing &lt;/html&gt; tag as some browsers may produce unexpected results or even errors if you forget the end tag.</strong><br>
+    <br>
+    <h2>Empty HTML Elements</h2>
+    <p>HTML elements with no content are called empty elemets. &lt;br&gt; is an empty element without a closing tag &lpar;the &lt;br&gt; tag defines a line break&rpar;&colon;<br>
+    <code style = "color: dodgerblue"> &lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</code>
+    Empty elements can be &quot;closed&quot; in the opening tag like this&colon; &lt;br/&gt;.
+    <br>
+    <br>HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your document readable by XML parsers, you must close all HTML elements properly.</p>
+     <br><hr width="400px"> 
+    <section class = "main-section" id ="html_attributes">
+    <header><h2>HTML Attributes</h2></header>  
+    <h2>HTML Elements</h2>
+      <p>Attributes provide additional information about HTML elements.</p>
+     <ul>
+       <li>All HTML elements can have <strong>attributes</strong></li>
+       <li>Attributes provide <strong>additional information</strong> about an element</li>
+       <li>Attributes are alway specified in the <strong>start tag</strong></li>
+       <li>Attributes usually come in name&sol;value pairs like&colon; <strong>name&equals;&quot;value&quot;</strong></li>
+      </ul><br>
+      <br>
+      <h2>The href Attribute</h2>
+      <p>HTML links are defined with the &lt;a&gt; tag. The link address is specified in the <strong>href</strong> attribute as per below example&colon;<br>
+    <code style = "color: dodgerblue"> &lt;a href=&quot;https://learn.freecodecamp.org/&quot;&gt;This is a link&lt;/a&gt;</code>
+    <h2>The src Attribute</h2>
+    <p>HTML images are defined with the &lt;img&gt; tag. The filename of the image source is specified in the <strong>src</strong> attribute as indicated below&colon;<br>
+    <code style = "color: dodgerblue"> &lt;img src&equals;<strong style = "color: black;">&quot;img_you_selected.jpg&quot;</strong>&gt;</code></p>
+    <h2>The alt Attributes</h2>
+    <p>The alt attribute specifies an alternative test to be used, if an image cannot be displayed.<br>
+    <br>The value of the alt attribute can also be read by screen readers. This way, if someone who is visually impared is listening to the page they will hear the element being read. The alt attribute is also helpful if the website does not display the image. Example of this would be&colon;
+    <code style = "color: dodgerblue"> &lt;img src&equals;<strong style = "color: black;">&quot;img_you_selected.jpg&quot; alt&equals;&quot;Girl with a jacket&quot;</strong>&gt;</code></p>
+    <p>For further information and more indepth explenations about attributes, please refer to this <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank">link</a>.</p>
+    <br><hr width="400px"> 
+      
+    <section class = "main-section" id ="html_headings">
+    <header><h2>HTML Headings</h2></header>  
+      <h2>HTML Headings</h2>
+     <p>Headings are defined by using &lt;h1&gt; to &lt;h6&gt; tags.
+      <br>
+      &lt;h1&gt; defines the most important heading while &lt;h6&gt; defines the least important heading. See the example below&colon;
+       <code style = "color: dodgerblue; ">
+            &lt;h1><em style = "color: black; "> Heading 1 </em>&lt;/h1>
+          &lt;h2><em style = "color: black; "> Heading 2 </em>&lt;/h2>
+          &lt;h3><em style = "color: black; "> Heading 3 </em>&lt;/h3>
+          &lt;h4><em style = "color: black; "> Heading 4 </em>&lt;/h4>
+          &lt;h5><em style = "color: black; "> Heading 5 </em>&lt;/h5>
+          &lt;h6><em style = "color: black; "> Heading 6 </em>&lt;/h6>
+    </code><br> 
+      <h2>Heading are Important</h2> 
+      <p>Search engines use the headings to index the structure and content of web pages. Users often skim a page by its headings thus it is important to use headings to show the document structure.
+     <br>
+      &lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings and so on.</p>
+      <h2>Bigger Headings</h2>
+      <p>Each HTML heading has a default size. However, you can specify the size for any heading with the <strong>style</strong> attribute, using the CSS <strong>font-size</strong> property as per the below example&colon;
+     <code style = "color: dodgerblue"> &lt;h1 style&equals;&quot;font-size:60px&quot;><strong style = "color: black;">Heading 1</strong>&lt;/h1&gt;</code>
+      <h2>How to view HTML source?</h2>
+      <p>Have you ever looked at a website and thought to yourself &quot;How did the do that?&quot;, well lets have a look and see.
+      <h3>View the HTML Source Code</h3>
+      <p>Right-click in an HTML page and select &quot;View Page Source&quot; &lpar;Chrome&rpar; or &quot;View Source&quot; &lpar;Edge&rpar;. This will open a window containing the HTML source code of the page.</p>
+      <h3>Inspect an HTML Element</h3>
+      <p>Right-click on an element &lpar;or a blank area&rpar;, and choose &quot;Inspect&quot; or &quot;Inspect Element&quot; to see what elements are made up of &lpar;you will see both the HTML and the CSS&rpar;. You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+    <br><hr width="400px">   
+    <section class = "main-section" id ="html_paragraphs">
+    <header><h2>HTML Paragraphs</h2></header>
+      <h2>HTML Paragraphs</h2>
+      <p>The HTML &lt;p&gt; element defines a paragraph as per the below example&colon;
+         <code style = "color: dodgerblue"> &lt;p&gt;<strong style = "color: black;">This will be your paragraph</strong>&lt;/p&gt;</code>
+      <h2>HTML Display</h2>
+      <p>You won't know how the page will be displayed, large or small screens and resized windows will create different results. With HTML, you cannot change the output by adding extra spaces or lines in your HTML code. The browser will automatically remove any extra spaces and extra lines when displayed.</p>
+      <h2>HTML Line Breaks</h2>
+      <p>The HTML &lt;br&gt; element defines a <strong>line break</strong>.<br>Use &lt;br&gt; if you want a line break &lpar;a new line&rpar; without starting a new paragraph.</p>
+      <h2>The HTML &lt;pre&gt; Element</h2>
+      <p> The HTML &lt;pre&gt; element defines preformatted text. The text inside a &lt;pre&gt; element is displayed in a fixed-width font &lpar;usually Courier&rpar; and it preserves spaces and line breaks.</p>
+    <br><hr width="400px">   
+     
+    <section class = "main-section" id ="html_styles">
+    <header><h2>HTML Styles</h2></header>
+      <h2>The HTML Style Attribute</h2>
+      <p>Setting the style of an HTML element, can be done with the style attribute. The HTML style attribute has the following syntax:
+     <code style = "color: dodgerblue"> &lt;tagname style&equals;&quot;property&colon; value&semi;&quot;&gt;</code> This property is part of CSS styling, to learn more about CSS, click this <a href="https://www.w3schools.com/css/default.asp" target="_blank">link</a></p>
+    <p>As there a various elements related to styling, please check out this </code> This property is part of CSS styling, to learn more about CSS, click this <a href="https://www.w3schools.com/html/html_styles.asp" target="_blank">link</a> for a detailed description on styling information.<br>
+    <br> We will list the main attributes you can use below&colon;
+      <ul>
+        <li>Use the style attribute for styling HTML elements</li>
+        <li>Use background-color for background color</li>
+        <li>Use color for text colors</li>
+        <li>Use font-family for text fonts</li>
+        <li>Use font-size for text sizes</li>
+        <li>Use text-align for text alignment</li>
+      </ul></p>
+    <br><hr width="400px">  
+      
+      
+    <section class = "main-section" id ="html_formatting">
+    <header><h2>HTML Formatting</h2></header>
+    <h2>Text Formatting</h2>
+    <code style = "color:black;"><strong style = "color: black;">This text is bold</strong>
+     <i style = "color: black;">This text is italic</i>
+      This is<sub style = "color:black;">subscript</sub> and <sup style = "color:black; ">superscript</sup></code><br>
+      
+    <a href = "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro" target = "_blank">Try it Yourself >></a></div><br>
+    <h2>HTML Formatting Elements</h2>
+    <p>In the previous chapter, you learned about the HTML <strong >style attribute.</strong> HTML also defines special <strong>elements</strong> for defining text with a special <strong>meaning</strong>. HTML uses elements like <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> for formatting output, like <strong>bold</strong> or <i>italic</i> text. Formatting elements were designed to display special types of text&colon;
+      <ul>
+           <li><strong style = "color: dodgerblue;">&lt;b&gt;</strong> - Bold text</li>
+            <li><strong style = "color: dodgerblue;">&lt;strong&gt;</strong> - Important text</li>
+            <li><strong style = "color: dodgerblue;">&lt;i&gt;</strong> - Italic text</li>
+            <li><strong style = "color: dodgerblue;">&lt;em&gt;</strong> - Emphasized text</li>
+            <li><strong style = "color: dodgerblue;">&lt;mark&gt;</strong> - Marked text</li>
+            <li><strong style = "color: dodgerblue;">&lt;small&gt;</strong> - Small text</li>
+            <li><strong style = "color: dodgerblue;">&lt;del&gt;</strong> - Deleted text</li>
+            <li><strong style = "color: dodgerblue;">&lt;ins&gt;</strong> - Inserted text</li>
+            <li><strong style = "color: dodgerblue;">&lt;sub&gt;</strong> - Subscript text</li>
+            <li><strong style = "color: dodgerblue;">&lt;sup&gt;</strong> - Superscript text</li>
+        </ul>
+                
+    <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+    <p>The HTML &lt;b&gt; element defines <strong>bold</strong> text, without any extra importance</p>
+    <code style ="color: dodgerblue;">&lt;b&gt;<strong style ="color: black;">This text is bold</strong>&lt;/b&gt;</code>
+    <p>The HTML &lt;strong&gt; element defines <strong>strong</strong> text, with added semantic &quot;strong&quot; importance.
+    <code style = "color: dodgerblue;">&lt;strong><strong style = "color: black;">This text strong</strong>&lt;/strong></code>
+    <h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2>
+    <p>The HTML &lt;i&gt;</strong > element defines <i>italic</i> text, without any extra importance.</p>
+    <code style = "color: dodgerblue;">&lt;i><i style = "color: black;">This text is italic</i>&lt;/i&gt;</code>
+    <p>The HTML &lt;em&gt;</strong> element defines <i>emphasized</i> text, with added semantic importance.
+    <code style = "color: dodgerblue;">&lt;e&gt;<strong style = "color: black;">This text is emphasized</strong>&lt;&gt;em&gt;</code></p>
+    
+    <p>NOTE: Browsers display &lt;strong&gt; as &lt;b&gt;, and &lt;em&gt; as &lt;i&gt;. However, there is a difference in the meaning of these tags: &lt;b&gt; and &lt;i&gt; defines bold and italic text, but &lt;strong&gt; and &lt;em&gt; means that the text is &quot;important&quot;.<br>
+    
+    <h2>HTML &lt;small> Element</h2>
+    <p>The HTML &lt;small&gt; element defines <small>smaller</small> text:
+            <code style = "color: dodgerblue;">&lt;h2&gt;<strong style = "color: black">HTML </strong>&lt;small&gt;<strong style = "color: black;">Small</strong>&lt;/small&gt;<strong style = "color: black;">Formatting</strong>&lt;/h2&gt;</code><br></p>
+    <p>There is way more about HTML formatting, so visit this <a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">page</a> for more about HTML formatting and more information.</p>
+    <br><hr width="400px"><br>
+      <section class="main-section" id="references">
+        <header><h2>References</h2></header> 
+    <p>All the information found on this page can be view at <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a> , there you will find detailed information and further guides to other langueges.</p> 
+    <p>Also look at <a href="https://learn.freecodecamp.org/" target="_blank">freecodecamp</a> where you can learn, design and create your own work.</p>
+      
+    &NewLine; 
+    &NewLine;
+    <span>&copy;2019 Hazelbag static web page</span>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
